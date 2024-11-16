@@ -3,70 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti"></script> <!-- Confetti -->
+    <title>Portafolio de Álvaro</title>
 </head>
 <body>
-    <!-- Navbar -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <span class="logo">Álvaro García Caballero</span>
+            <nav>
+                <a href="#inicio" class="active">Inicio</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#educacion">Educación</a>
+                <a href="#formacion-extra">Formación Extra</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
     </header>
-
     <!-- Sección Inicio -->
-    <section id="inicio">
-        <h1>¡Hola! Soy Álvaro García Caballero</h1>
-        <p>Ingeniero Informático especializado en Tecnología de la Información</p>
+    <section id="inicio" class="home active-section">
+        <div class="home-img">
+            <img src="cv_photo.jpg" alt="Foto de Álvaro">
+        </div>
+        <div class="home-content">
+            <h1>¡Hola! Soy Álvaro García Caballero</h1>
+            <h3>Ingeniero Informático</h3>
+            <p>
+                Ingeniero Informático especializado en Tecnología de la Información destacando las bases de datos y desarrollo frontend.
+                Apasionado por la música, el deporte (fútbol sala) y los idiomas, sobre todo el inglés.
+                Creativo, disciplinado y orientado al trabajo en equipo y a la mejora continua.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/AlvaroGarciaCaballero/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/alvarogarcia49" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <!-- Asegúrate de que el botón esté dentro de la clase home-content -->
+            <a href="CV_Álvaro.pdf" class="btn" download="CV_Álvaro.pdf">Descargar CV</a>
+        </div>        
     </section>
 
-    <!-- Sección Sobre Mí -->
-    <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>Soy un apasionado por la tecnología con experiencia en el desarrollo de sitios web y aplicaciones...</p>
-    </section>
-
-    <!-- Sección Habilidades -->
-    <section id="habilidades">
+    <section id="habilidades" class="habilidades">
         <h2>Habilidades</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-        </ul>
+        <div class="tools">
+            <div class="tool">
+                <i class="fa-brands fa-html5 html-icon"></i>  <!-- Color HTML -->
+                <p>HTML</p>
+            </div>
+            <div class="tool">
+                <i class="fa-brands fa-css3-alt css-icon"></i> <!-- Color CSS -->
+                <p>CSS</p>
+            </div>
+            <div class="tool">
+                <i class="fa-brands fa-angular angular-icon"></i> <!-- Color Angular -->
+                <p>Angular</p>
+            </div>
+            <div class="tool">
+                <i class="fa-brands fa-js js-icon"></i> <!-- Color JavaScript -->
+                <p>JavaScript</p>
+            </div>
+            <div class="tool">
+                <i class="fa-brands fa-python python-icon"></i> <!-- Color Python -->
+                <p>Python</p>
+            </div>
+            <div class="tool">
+                <i class="fa-solid fa-database mysql-icon"></i> <!-- Color MySQL -->
+                <p>MySQL</p>
+            </div>
+            <div class="tool">
+                <i class="fas fa-chart-line powerbi-icon"></i> <!-- Icono de gráfica para Power BI (color amarillo) -->
+                <p>Power BI</p>
+            </div>
+            <div class="tool">
+                <i class="fa-solid fa-project-diagram bizagi-icon"></i> <!-- Color Bizagi -->
+                <p>Bizagi Modeler</p>
+            </div>
+            <div class="tool">
+                <i class="fa-solid fa-project-diagram staruml-icon"></i> <!-- Color StarUML -->
+                <p>StarUML</p>
+            </div>
+            <div class="tool">
+                <i class="fa-solid fa-square-root-variable matlab-icon"></i> <!-- Color Matlab -->
+                <p>Matlab</p>
+            </div>
+            <div class="tool">
+                <i class="fa-brands fa-r-project r-icon"></i> <!-- Color R -->
+                <p>R</p>
+            </div>
+            <div class="tool">
+                <i class="fa-brands fa-java java-icon"></i> <!-- Color Java -->
+                <p>Java</p>
+            </div>
+        </div>
     </section>
+    
 
-    <!-- Sección Portafolio -->
-    <section id="portafolio">
-        <h2>Portafolio</h2>
-        <div class="proyecto">
-            <img src="ruta/de/tu/imagen1.jpg" alt="Proyecto 1">
-            <h3>Proyecto 1</h3>
-            <p>Descripción breve del proyecto.</p>
+    <!-- Sección Educación -->
+    <section id="educacion" class="educacion">
+        <h2>Educación</h2>
+        <div class="educacion-item">
+            <h3>BACHILLERATO DE CIENCIAS TECNOLÓGICAS (BILINGÜE)</h3>
+            <p>Instituto San José - Ciudad Real (2018 - 2020)</p>
+            <p>Instituto concertado bilingüe cuya jornada lectiva se prolonga media hora más de lo habitual cada día.</p>
         </div>
-        <div class="proyecto">
-            <img src="ruta/de/tu/imagen2.jpg" alt="Proyecto 2">
-            <h3>Proyecto 2</h3>
-            <p>Descripción breve del proyecto.</p>
+        <div class="educacion-item">
+            <h3>TÍTULO PROFESIONAL DE MÚSICA ESPECIALIZADO EN VIOLA</h3>
+            <p>Conservatorio “Marcos Redondo” de Música - Ciudad Real (2010 - 2020)</p>
+            <p>10 años de formación (4 de formación elemental y 6 años de formación profesional), especializado en el instrumento de Viola.</p>
         </div>
-        <!-- Agrega más proyectos según sea necesario -->
+        <div class="educacion-item">
+            <h3>INGENIERÍA INFORMÁTICA</h3>
+            <p>Escuela Superior de Informática - Ciudad Real (2020 - Actual)</p>
+            <p>Especialidad de Tecnología de la Información, con herramientas como HTML, CSS, Python, MySQL y Angular para el desarrollo web.</p>
+        </div>
     </section>
+    
+
+    <!-- Sección Formación Extra -->
+    <section id="formacion-extra" class="formacion-extra">
+        <h2>Formación Extra</h2>
+        <div class="formacion-item">
+            <div class="item-header">
+                <h3>CURSO CERO DE MATEMÁTICAS Y FÍSICA</h3>
+                <p class="fecha">Escuela Superior de Informática - Ciudad Real (2020)</p>
+            </div>
+            <p>Curso intensivo de repaso en matemáticas y física para reforzar conocimientos previos en el área de ciencias exactas.</p>
+        </div>
+        <div class="formacion-item">
+            <div class="item-header">
+                <h3>INTERCAMBIO EN INGLATERRA (SCARBOROUGH)</h3>
+                <p class="fecha">Scarborough College (2017)</p>
+            </div>
+            <p>Experiencia internacional viviendo en Scarborough, perfeccionando el inglés y conociendo la cultura británica.</p>
+        </div>
+        <div class="formacion-item">
+            <div class="item-header">
+                <h3>ERASMUS+ EN ESLOVAQUIA (BRATISLAVA)</h3>
+                <p class="fecha">Pan-European University (2023 - 2024)</p>
+            </div>
+            <p>Participación en el programa Erasmus+ para una experiencia internacional en Eslovaquia, enfocado en estudios informáticos y cultura europea.</p>
+        </div>
+        <div class="formacion-item">
+            <div class="item-header">
+                <h3>DIGITAL BUILDERS NTT DATA</h3>
+                <p class="fecha">Ntt Data - Ciudad Real (Noviembre 2024)</p>
+            </div>
+            <p>Formación en desarrollo digital y soluciones tecnológicas con NTT Data, adquiriendo conocimientos prácticos en la industria de la tecnología.</p>
+        </div>
+    </section>
+    
 
     <!-- Sección Contacto -->
-    <section id="contacto">
+    <section id="contacto" class="contacto">
         <h2>Contacto</h2>
-        <p>Correo: Alvaro.Garcia49@alu.uclm.es</p>
-        <p>Teléfono: +640606969</p>
+        <div class="contacto-info">
+            <div class="info-item">
+                <span>Alvaro.Garcia49@alu.uclm.es</span>
+                <i class="fa-solid fa-envelope"></i> <!-- Icono de correo -->
+            </div>
+            <div class="info-item">
+                <span>+34 640606969</span>
+                <i class="fa-solid fa-phone"></i> <!-- Icono de teléfono -->
+            </div>
+            <div class="info-item">
+                <a href="https://alvarogarcia49.github.io/" target="_blank">https://alvarogarcia49.github.io/</a>
+                <i class="fa-brands fa-github"></i> <!-- Icono de GitHub -->
+            </div>
+            <div class="info-item">
+                <a href="https://www.linkedin.com/in/AlvaroGarciaCaballero/" target="_blank">https://www.linkedin.com/in/AlvaroGarciaCaballero/</a>
+                <i class="fa-brands fa-linkedin"></i> <!-- Icono de LinkedIn -->
+            </div>
+        </div>
     </section>
+    <script>
+        // Referencias a los enlaces de navegación y las secciones
+        const navLinks = document.querySelectorAll('nav a');
+        const sections = document.querySelectorAll('section');
 
-    <script src="script.js"></script>
+        // Función para lanzar confetti
+        function launchConfetti() {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { x: 0.5, y: 0.5 },
+            });
+        }
+
+        // Agregar evento click a los enlaces de navegación
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Cambiar color de los enlaces al hacer clic
+                navLinks.forEach(navLink => navLink.classList.remove('active'));
+                link.classList.add('active');
+
+                // Mostrar la sección correspondiente
+                const targetId = link.getAttribute('href').substring(1);
+                sections.forEach(section => {
+                    if (section.id === targetId) {
+                        section.classList.add('active-section');
+                    } else {
+                        section.classList.remove('active-section');
+                    }
+                });
+
+                // Lanzar confetti
+                launchConfetti();
+            });
+        });
+
+        // Inicialmente, mostrar solo la primera sección
+        document.querySelector('#inicio').classList.add('active-section');
+    </script>
 </body>
 </html>
